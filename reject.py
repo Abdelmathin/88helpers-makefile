@@ -1,4 +1,17 @@
-#!/usr/bin/env python
+#  **************************************************************************  #
+#                                                                              #
+#                                                          :::      ::::::::   #
+#    reject.py                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ahabachi <ahabachi@student.1337.ma>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/21 13:45:03 by ahabachi          #+#    #+#              #
+#    Updated: 2022/11/24 17:01:00 by ahabachi         ###   ########.fr        #
+#                                                                              #
+#  **************************************************************************  #
+
+# By: Abdelmathin Habachi
+
 import os;
 import sys;
 
@@ -104,7 +117,7 @@ def reject_files(ofiles, work_dir = os.getcwd()):
 		file = fix_filename(file, work_dir);
 		if (not file):
 			continue ;
-		# khask t rejecti filename o dirname dyal o dirname dyalo ...
+		# khask t rejecti: filename + dirname dyalo + dirname dyalo ...
 		filename = '';
 		for sp in file.split(SEP):
 			filename += sp;
